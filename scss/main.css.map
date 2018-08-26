@@ -1,8 +1,11 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AGAA,OAAO,CAAC,gFAAI;AAEZ,AAAA,IAAI,CAAC;EACF,WAAW,EDFJ,WAAW,EAAE,UAAU;ECG9B,SAAS,EAAE,SAAS;EACpB,WAAW,EAAE,GAAG;EAChB,KAAK,EFFS,OAAO;EEGrB,WAAW,EDJF,GAAG;CCKd;;AAED,AAAA,EAAE,CAAC;EACC,OAAO,EAAE,CAAC;CACb",
     "sources": [
-        "main.scss"
+        "main.scss",
+        "abstracts/_colors.scss",
+        "abstracts/_typography.scss",
+        "base/_typography.scss"
     ],
     "names": [],
     "file": "main.css"
