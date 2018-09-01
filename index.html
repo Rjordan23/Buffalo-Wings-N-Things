@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Domine:400,700|Open+Sans:400,400i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:700,900|Yrsa:400,500" rel="stylesheet">
     <link rel="stylesheet" href="../scss/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <title>Brewery</title>
 </head>
 <body>
@@ -48,12 +49,17 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea voluptatem sapiente sit veritatis voluptatibus corporis doloremque maiores alias debitis obcaecati, fuga cumque, est repellat hic.</p>
         
         <div class="grid-carousel">
+
+            <button class="btn grid-carousel__button js-left">
+                <i class="fas fa-angle-left"></i>
+            </button>
+
             <!-- Carousel Item 01 -->
             <figure class="grid-carousel__item">
                 <img src="images/beer-1.jpg" alt="" class="grid-carousel__image">
-                <figcaption class="grid-carousel__cation">
+                <figcaption class="grid-carousel__caption">
                     <h3 class="grid-carousel__title">IPA</h3>
-                    <p class="grid-carousel__subtitle">6.2%<span>alcohol</span></p>
+                    <p class="grid-carousel__subtitle">6.2%<span> alcohol</span></p>
                     <p class="grid-carousel__description">Our take on a classic style</p>
                 </figcaption>
             </figure>
@@ -61,29 +67,29 @@
             <!-- Carousel Item 02 -->
             <figure class="grid-carousel__item">
                 <img src="images/beer-2.jpg" alt="" class="grid-carousel__image">
-                <figcaption class="grid-carousel__cation">
-                    <h3 class="grid-carousel__title">IPA</h3>
-                    <p class="grid-carousel__subtitle">6.2%<span>alcohol</span></p>
-                    <p class="grid-carousel__description">Our take on a classic style</p>
+                <figcaption class="grid-carousel__caption">
+                    <h3 class="grid-carousel__title">Raspberry Ale</h3>
+                    <p class="grid-carousel__subtitle">4.9%<span> alcohol</span></p>
+                    <p class="grid-carousel__description">Beat the Hheat with this refreshing summer beer</p>
                 </figcaption>
             </figure>
 
             <!-- Carousel Item 03 -->
-            <figure class="grid-carousel__item">
+            <figure class="grid-carousel__item featured">
                 <img src="images/beer-3.jpg" alt="" class="grid-carousel__image">
-                <figcaption class="grid-carousel__cation">
-                    <h3 class="grid-carousel__title">IPA</h3>
-                    <p class="grid-carousel__subtitle">6.2%<span>alcohol</span></p>
-                    <p class="grid-carousel__description">Our take on a classic style</p>
+                <figcaption class="grid-carousel__caption">
+                    <h3 class="grid-carousel__title">Saison</h3>
+                    <p class="grid-carousel__subtitle">5.9%<span> alcohol</span></p>
+                    <p class="grid-carousel__description">A farmhouse style Saison</p>
                 </figcaption>
             </figure>
 
             <!-- Carousel Item 04 -->
             <figure class="grid-carousel__item">
                 <img src="images/beer-4.jpg" alt="" class="grid-carousel__image">
-                <figcaption class="grid-carousel__cation">
-                    <h3 class="grid-carousel__title">IPA</h3>
-                    <p class="grid-carousel__subtitle">6.2%<span>alcohol</span></p>
+                <figcaption class="grid-carousel__caption">
+                    <h3 class="grid-carousel__title">Brett Pale Ale</h3>
+                    <p class="grid-carousel__subtitle">6.4%<span> alcohol</span></p>
                     <p class="grid-carousel__description">Our take on a classic style</p>
                 </figcaption>
             </figure>
@@ -91,12 +97,16 @@
             <!-- Carousel Item 05 -->
             <figure class="grid-carousel__item">
                 <img src="images/beer-5.jpg" alt="" class="grid-carousel__image">
-                <figcaption class="grid-carousel__cation">
-                    <h3 class="grid-carousel__title">IPA</h3>
-                    <p class="grid-carousel__subtitle">6.2%<span>alcohol</span></p>
-                    <p class="grid-carousel__description">Our take on a classic style</p>
+                <figcaption class="grid-carousel__caption">
+                    <h3 class="grid-carousel__title">ESP</h3>
+                    <p class="grid-carousel__subtitle">6.9%<span> alcohol</span></p>
+                    <p class="grid-carousel__description">A classic English style beer</p>
                 </figcaption>
             </figure>
+
+            <button class="btn grid-carousel__button js-right">
+                <i class="fas fa-angle-right"></i>
+            </button>
         </div>
     </section>
 
@@ -130,10 +140,11 @@
     </section>
 
     <footer>
-        <svg class="logo logo--light"><svg id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 174.1 84.4">
+        <!-- <svg class="logo logo--light"><svg id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 174.1 84.4"> -->
         <p>&copy; Copyright 2018</p>
     </footer>
 
+    <script src="carousel.js"></script>
 
 </body>
 </html>
