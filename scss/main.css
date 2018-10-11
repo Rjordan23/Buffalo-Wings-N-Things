@@ -47,6 +47,10 @@ img {
   height: auto;
 }
 
+.logo--light * {
+  fill: #d3cdc1;
+}
+
 .section {
   display: -ms-grid;
   display: grid;
@@ -266,6 +270,26 @@ button {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+}
+
+footer {
+  text-align: center;
+  color: #d3cdc1;
+}
+
+footer p {
+  font-family: "Lato", sans-serif;
+  line-height: 1;
+  margin: 0;
+}
+
+.section--about .container {
+  width: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .card {
