@@ -1,0 +1,22 @@
+.section--wide {
+  width: 90%;
+  display: grid;
+  grid-gap: .8em;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 6.5em auto 4.5em auto;
+
+  h1 {
+    color: $clr-blue-base;
+  }
+  
+  .section--left {
+    position: relative;
+
+    #beef--logo {
+      position: absolute;
+      top: 0;
+      left: 10%;
+      z-index: -1;
+    }
+  }
+}

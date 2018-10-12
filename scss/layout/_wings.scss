@@ -1,0 +1,17 @@
+.section--wings {
+  margin-top: 45px;
+  padding: 40px;
+  grid: auto-flow / minmax(350px, 2fr) minmax(300px, 650px) 1fr;
+  grid-column-gap: 2em;
+  align-items: center;
+
+  &__image {
+    grid-column: 1 / 2;
+    margin-left: auto;
+  }
+
+  &__text-box {
+    grid-column: 2 / 3;
+    align-self: center;
+  }
+}

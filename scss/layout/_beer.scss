@@ -10,6 +10,7 @@ button {
 
 .section--beer {
     text-align: center;
+    padding-top: 2em;
 }
 
 .grid-carousel {
@@ -17,7 +18,7 @@ button {
     display: grid;
     grid: auto-flow / 2em repeat(5, 1fr) 2em;
     max-width: 1200px;
-    margin: 3em auto;
+    margin: 1.5em auto;
     position: relative;
 
     &__item {

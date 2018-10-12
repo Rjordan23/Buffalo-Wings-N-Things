@@ -100,9 +100,9 @@ nav a:hover {
 }
 
 .logo {
-  width: 450px;
   margin: 0 auto 2em;
   display: block;
+  border-radius: 5px;
 }
 
 .section--intro {
@@ -142,6 +142,31 @@ nav a:hover {
           transform: translate(-50%);
 }
 
+.section--wide {
+  width: 90%;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: .8em;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  margin: 6.5em auto 4.5em auto;
+}
+
+.section--wide h1 {
+  color: #5a666a;
+}
+
+.section--wide .section--left {
+  position: relative;
+}
+
+.section--wide .section--left #beef--logo {
+  position: absolute;
+  top: 0;
+  left: 10%;
+  z-index: -1;
+}
+
 .fa-angle-left,
 .fa-angle-right {
   font-size: 2.5rem;
@@ -154,6 +179,7 @@ button {
 
 .section--beer {
   text-align: center;
+  padding-top: 2em;
 }
 
 .grid-carousel {
@@ -162,7 +188,7 @@ button {
   display: grid;
   grid: auto-flow/2em repeat(5, 1fr) 2em;
   max-width: 1200px;
-  margin: 3em auto;
+  margin: 1.5em auto;
   position: relative;
 }
 
@@ -251,9 +277,13 @@ button {
 }
 
 .section--wings {
-  padding-left: 40px;
+  margin-top: 45px;
+  padding: 40px;
   grid: auto-flow/minmax(350px, 2fr) minmax(300px, 650px) 1fr;
   grid-column-gap: 2em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .section--wings__image {
@@ -277,19 +307,54 @@ footer {
   color: #d3cdc1;
 }
 
+footer img {
+  width: 200px;
+}
+
 footer p {
   font-family: "Lato", sans-serif;
   line-height: 1;
   margin: 0;
 }
 
-.section--about .container {
-  width: 85%;
+.section--mission {
+  padding: 2em 0;
+  margin: 0;
+  background: #1B2845;
+}
+
+.section--stats {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 3em;
+}
+
+.section--stats ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.section--stats ul li {
+  display: inline;
+  opacity: .4;
+}
+
+.section--taproom {
+  padding: 2em 0;
+  margin: 0;
+  background: #1B2845;
 }
 
 .card {
@@ -320,16 +385,18 @@ footer p {
   -ms-grid-column: 2;
   -ms-grid-column-span: 4;
   grid-column: 2 / span 4;
+  z-index: 2;
 }
 
 .card--end {
   -ms-grid-column: 4;
   -ms-grid-column-span: 4;
   grid-column: 4 / span 4;
+  z-index: 2;
 }
 
 .card__image {
-  z-index: -1;
+  z-index: 1;
   -ms-grid-row: 2;
   -ms-grid-row-span: 3;
   grid-row: 2 / 5;
