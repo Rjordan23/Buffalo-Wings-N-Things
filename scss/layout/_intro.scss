@@ -7,13 +7,14 @@
 
 .section--intro {
     background: {
-        image: url('../../images/hero-bg.jpg');
+        image: linear-gradient(to bottom left, rgba(27, 40, 69, .75), rgba(27, 40, 69, .8)), url('../../images/jr-2.jpg');
+        position-y: center; 
         size: cover;
         repeat: no-repeat;
     }
     padding: 10vh 0;
     text-align: center;
-    color: $clr-brown-base;
+    color: white;
 
     .logo {
         grid-column: 2 / 3;
