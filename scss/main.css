@@ -114,6 +114,8 @@ nav a:hover {
   padding: 10vh 0;
   text-align: center;
   color: white;
+  -webkit-box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.5);
 }
 
 .section--intro .logo {
@@ -151,7 +153,7 @@ nav a:hover {
   grid-gap: .8em;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
-  margin: 6.5em auto 4.5em auto;
+  margin: 5.5em auto;
 }
 
 .section--wide h1 {
@@ -306,7 +308,6 @@ button {
 
 footer {
   text-align: center;
-  color: #d3cdc1;
 }
 
 footer img {
@@ -328,6 +329,7 @@ footer p {
 }
 
 .section--stats {
+  max-height: 387px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -337,10 +339,13 @@ footer p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 30px 0;
-  background: url("../../images/field.jpg");
-  background-size: cover;
-  background-position: center;
+  padding: 80px 0;
+  background: -webkit-gradient(linear, right top, left bottom, from(rgba(27, 40, 69, 0.2)), to(rgba(0, 0, 0, 0.3))), url("../../images/field-2.jpg");
+  background: linear-gradient(to bottom left, rgba(27, 40, 69, 0.2), rgba(0, 0, 0, 0.3)), url("../../images/field-2.jpg");
+  background-position-y: 55%;
+  background-position-x: left;
+  -webkit-box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.5);
 }
 
 .section--stats img {
@@ -348,8 +353,14 @@ footer p {
   margin-right: 30px;
 }
 
-.section--stats p {
-  margin: 10px;
+.section--stats p:nth-of-type(1) {
+  margin-bottom: 15px;
+  color: #EEE5E9;
+  color: #d3cdc1;
+}
+
+.section--stats p:nth-of-type(2), .section--stats p:nth-of-type(3) {
+  font-weight: 900;
 }
 
 .section--stats a {
@@ -362,6 +373,121 @@ footer p {
   background: #1B2845;
   -webkit-box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.5);
+}
+
+.section--locations {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 40px 0;
+  color: black;
+}
+
+.section--locations ul {
+  margin: 0 20px;
+}
+
+.section--locations ul li {
+  list-style: none;
+}
+
+.section--locations ul li:nth-of-type(1) {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.section--locations ul li:nth-of-type(2) {
+  font-weight: 500;
+}
+
+.section--winners {
+  margin: 45px;
+  padding: 0 15px;
+}
+
+.section--winners .title {
+  text-align: center;
+  font-size: 4rem;
+  color: #5a666a;
+}
+
+.section--winners .title img:nth-of-type(1) {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+.section--winners .title img {
+  height: 6rem;
+}
+
+.section--winners p {
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.section--winners .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 30px;
+}
+
+.section--winners .player--card {
+  width: 280px;
+  -webkit-box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.3);
+  margin: 0 15px;
+}
+
+.section--winners .card--header {
+  position: relative;
+  height: 200px;
+}
+
+.section--winners .card--header img {
+  height: 100%;
+}
+
+.section--winners .card--body {
+  padding: 10px 20px;
+}
+
+.section--winners .card--body h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.section--winners .card--body h6 {
+  margin: 0;
+  color: #89807a;
+}
+
+.section--winners .card--body h5 {
+  margin: 0;
+  color: #5a666a;
+}
+
+.section--winners .card--body .gold {
+  color: gold;
+}
+
+.section--winners .card--body .silver {
+  color: silver;
+}
+
+.section--winners .card--body .bronze {
+  color: #CD7F32;
 }
 
 .card {

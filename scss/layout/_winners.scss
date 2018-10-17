@@ -1,0 +1,71 @@
+.section--winners {
+  margin: 45px;
+  padding: 0 15px;
+
+  .title {
+    text-align: center;
+    font-size: 4rem;
+    color: $clr-blue-base;
+
+    img:nth-of-type(1) {
+      transform: scaleX(-1)
+    }
+
+      img {
+        height: 6rem;;
+      }
+
+      // .fa-football-ball {
+      //   color: $clr-brown-dark;
+      // }
+  }
+  p {
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  .player--card {
+    width: 280px;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.3);
+    margin: 0 15px;
+  }
+  .card--header {
+    position: relative;
+    height: 200px;
+    
+    img {
+      height: 100%;
+    }
+  }
+  
+  .card--body {
+    padding: 10px 20px;
+      h2 {
+        display: flex;
+        justify-content: space-between;
+      }
+      h6 {
+        margin: 0;
+        color: $clr-brown-dark;
+      }
+      h5 {
+        margin: 0;
+        color: $clr-blue-base;
+      }
+      .gold {
+        color: gold;
+      }
+      .silver {
+        color: silver;
+      }
+      .bronze {
+        color: #CD7F32;
+      }
+  }
+}
+

@@ -1,0 +1,34 @@
+.section--stats {
+    max-height: 387px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0;
+    background: linear-gradient(to bottom left, rgba(27, 40, 69, .2), rgba(0, 0, 0, .3)), url('../../images/field-2.jpg');
+    background: {
+      position-y: 55%;
+      position-x: left;
+    }
+    box-shadow: 0 0 8px 2px rgba(0, 0, 0, .5);
+
+
+    img {
+      width: 20rem;
+      margin-right: 30px;
+    }
+
+    p:nth-of-type(1){
+      margin-bottom: 15px;
+      color: #EEE5E9;
+      color: $clr-brown-light;
+    }
+
+    p:nth-of-type(2), p:nth-of-type(3) {
+      font-weight: 900;
+    }
+
+    a {
+      background: #F17105;
+    }
+  
+}
