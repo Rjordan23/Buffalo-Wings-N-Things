@@ -68,3 +68,37 @@ button {
         background: linear-gradient(to left, rgba(white, .9), rgba(white, .6));
     }
 }
+
+.drink--specials {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .specials {
+        width: 33.3%;
+        height: 400px;
+    }
+
+
+    .red {
+        background: {
+            image: url('../../images/the-bar.jpeg');
+            size: cover;
+        }
+    }
+    .blue {
+        background: {
+            image: url('../../images/alcohol-bar-drinks-party.jpg');
+            size: cover;
+        }
+    }
+    .yellow {
+        background: {
+            image: url('../../images/the-drinks.jpeg');
+            size: cover;
+        }
+    }
+
+  }
+

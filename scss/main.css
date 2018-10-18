@@ -37,6 +37,10 @@ p {
   margin-bottom: .5em;
 }
 
+body {
+  background-color: #fefdfb;
+}
+
 *, *::before, *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -280,6 +284,41 @@ button {
   background: linear-gradient(to left, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.6));
 }
 
+.drink--specials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.drink--specials .specials {
+  width: 33.3%;
+  height: 400px;
+}
+
+.drink--specials .red {
+  background-image: url("../../images/the-bar.jpeg");
+  background-size: cover;
+}
+
+.drink--specials .blue {
+  background-image: url("../../images/alcohol-bar-drinks-party.jpg");
+  background-size: cover;
+}
+
+.drink--specials .yellow {
+  background-image: url("../../images/the-drinks.jpeg");
+  background-size: cover;
+}
+
 .section--wings {
   margin-top: 45px;
   padding: 40px;
@@ -308,6 +347,8 @@ button {
 
 footer {
   text-align: center;
+  background-color: #5a666a;
+  padding: 20px 0;
 }
 
 footer img {
@@ -457,6 +498,8 @@ footer p {
 
 .section--winners .card--body {
   padding: 10px 20px;
+  color: #89807a;
+  font-weight: 550;
 }
 
 .section--winners .card--body h2 {
@@ -479,15 +522,7 @@ footer p {
 }
 
 .section--winners .card--body .gold {
-  color: gold;
-}
-
-.section--winners .card--body .silver {
-  color: silver;
-}
-
-.section--winners .card--body .bronze {
-  color: #CD7F32;
+  color: goldenrod;
 }
 
 .card {

@@ -45,6 +45,10 @@
   
   .card--body {
     padding: 10px 20px;
+    color: $clr-brown-dark;
+    font-weight: $fw-thick;
+    
+
       h2 {
         display: flex;
         justify-content: space-between;
@@ -58,13 +62,7 @@
         color: $clr-blue-base;
       }
       .gold {
-        color: gold;
-      }
-      .silver {
-        color: silver;
-      }
-      .bronze {
-        color: #CD7F32;
+        color: goldenrod;
       }
   }
 }
