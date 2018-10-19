@@ -20,3 +20,26 @@
     }
   }
 }
+
+@media (max-width: 933px) {
+  .section--wide {
+    margin: 0 auto;
+    grid-template-areas:
+    'about-us about-us'
+    'beef beef';
+    
+    h1 {
+      text-align: center;
+      font-size: 3rem;
+    }
+    
+    .section--left {
+      grid-area: beef;
+      margin-bottom: 20px;
+  
+    }
+    .section--right {
+      grid-area: about-us;
+    }
+  }
+}

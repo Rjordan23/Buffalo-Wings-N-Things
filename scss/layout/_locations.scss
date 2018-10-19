@@ -1,12 +1,15 @@
 .section--locations {
   display: flex;
-  justify-content: center;
-  padding: 40px 0;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 20px 0;
   color: black;
 
   ul {
-    margin: 0 20px;
+    padding: 0;
+    margin: 5px 10px;
     li {
+
       list-style: none;
     }
     li:nth-of-type(1) {

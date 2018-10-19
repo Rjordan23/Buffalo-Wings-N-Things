@@ -15,12 +15,9 @@
         height: 6rem;;
       }
 
-      // .fa-football-ball {
-      //   color: $clr-brown-dark;
-      // }
   }
   p {
-    width: 50%;
+    width: 80%;
     text-align: center;
     margin: 0 auto;
   }
@@ -67,3 +64,140 @@
   }
 }
 
+@media (max-width:1042px) {
+  .section--winners {
+    margin: 45px 0;
+    padding: 0 0;
+  
+    .title {
+      font-size: 3.5rem;  
+        img {
+          height: 5rem;;
+        }
+    }
+  }
+}
+
+@media (max-width:933px) {
+  .section--winners {
+    padding: 0;
+    .title {
+      font-size: 3rem;
+        img {
+          height: 5rem;
+        }
+    }
+    p {
+      width: 80%;
+    }
+    .container {
+      flex-wrap: wrap;
+    }
+    .player--card {
+      width: 300px;
+      height: 400px;
+      margin: 10px 15px;
+    }
+    .card--body {
+      padding: 10px 20px;
+      color: $clr-brown-dark;
+      font-weight: $fw-thick;
+    }
+  }
+}
+
+@media (max-width:733px) {
+  .section--winners {
+  
+    .title {
+      font-size: 3rem;
+      color: $clr-blue-base;
+  
+      img {
+        display: none;
+      }
+    }
+    .player--card {
+      width: 380px;
+      height: 420px;
+      margin: 10px 0;
+    }
+    .card--header {
+      height: 250px;
+      width: 100%;
+      
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+    
+    .card--body {
+      padding: 10px 20px;
+      color: $clr-brown-dark;
+      font-weight: $fw-thick;
+      
+  
+        h2 {
+          display: flex;
+          justify-content: space-between;
+        }
+        h6 {
+          margin: 0;
+          color: $clr-brown-dark;
+        }
+        h5 {
+          margin: 0;
+          color: $clr-blue-base;
+        }
+        .gold {
+          color: goldenrod;
+        }
+    }
+  }
+}
+
+@media (max-width:433px) {
+  .section--winners {
+    padding: 0 20px;
+
+    .player--card {
+      max-width: 300px;
+      min-width: 260px;
+      height: 430px;
+      margin: 10px 10px;
+    }
+    .card--header {
+      height: 200px;
+      width: 100%;
+      
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+    
+    .card--body {
+      padding: 10px 20px;
+      color: $clr-brown-dark;
+      font-weight: $fw-thick;
+      
+  
+        h2 {
+          display: flex;
+          justify-content: space-between;
+        }
+        h6 {
+          margin: 0;
+          color: $clr-brown-dark;
+        }
+        h5 {
+          margin: 0;
+          color: $clr-blue-base;
+        }
+        .gold {
+          color: goldenrod;
+        }
+    }
+  }
+}

@@ -175,6 +175,30 @@ nav a:hover {
   z-index: -1;
 }
 
+@media (max-width: 933px) {
+  .section--wide {
+    margin: 0 auto;
+        grid-template-areas: 'about-us about-us' 'beef beef';
+  }
+  .section--wide h1 {
+    text-align: center;
+    font-size: 3rem;
+  }
+  .section--wide .section--left {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: beef;
+    margin-bottom: 20px;
+  }
+  .section--wide .section--right {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: about-us;
+  }
+}
+
 .fa-angle-left,
 .fa-angle-right {
   font-size: 2.5rem;
@@ -191,13 +215,19 @@ button {
 }
 
 .grid-carousel {
-  grid-column: 1 / -1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1 / 4;
   display: -ms-grid;
   display: grid;
   grid: auto-flow/2em repeat(5, 1fr) 2em;
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 1.5em auto;
   position: relative;
+}
+
+.grid-carousel .grid-carousel__button {
+  padding: 0;
 }
 
 .grid-carousel__item {
@@ -250,13 +280,13 @@ button {
 
 .grid-carousel__button {
   all: unset;
-  padding: .5em;
+  padding: 0;
 }
 
 .grid-carousel__button:last-of-type {
-  -webkit-box-ordinal-group: 100;
-      -ms-flex-order: 99;
-          order: 99;
+  -webkit-box-ordinal-group: 11;
+      -ms-flex-order: 10;
+          order: 10;
 }
 
 .grid-carousel::before, .grid-carousel::after {
@@ -284,45 +314,10 @@ button {
   background: linear-gradient(to left, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.6));
 }
 
-.drink--specials {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.drink--specials .specials {
-  width: 33.3%;
-  height: 400px;
-}
-
-.drink--specials .red {
-  background-image: url("../../images/the-bar.jpeg");
-  background-size: cover;
-}
-
-.drink--specials .blue {
-  background-image: url("../../images/alcohol-bar-drinks-party.jpg");
-  background-size: cover;
-}
-
-.drink--specials .yellow {
-  background-image: url("../../images/the-drinks.jpeg");
-  background-size: cover;
-}
-
 .section--wings {
   margin-top: 45px;
   padding: 40px;
-  grid: auto-flow/minmax(350px, 2fr) minmax(300px, 650px) 1fr;
+  grid: auto-flow/minmax(350px, 2fr) minmax(300px, 650px);
   grid-column-gap: 2em;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -346,27 +341,53 @@ button {
 }
 
 footer {
-  text-align: center;
-  background-color: #5a666a;
+  background-color: #a3b9bf;
   padding: 20px 0;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.5);
+}
+
+footer ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+footer ul li a {
+  color: white;
+  text-decoration: none;
 }
 
 footer img {
-  width: 200px;
+  width: 120px;
+  height: 100px;
+  margin: 0 15px;
 }
 
 footer p {
   font-family: "Lato", sans-serif;
+  font-size: 18px;
   line-height: 1;
   margin: 0;
 }
 
 .section--mission {
+  height: 655px;
   padding: 2em 0;
   margin: 0;
   background: #1B2845;
   -webkit-box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.5);
+  position: relative;
 }
 
 .section--stats {
@@ -409,26 +430,31 @@ footer p {
 }
 
 .section--taproom {
+  height: 655px;
   padding: 2em 0;
   margin: 0;
   background: #1B2845;
   -webkit-box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.5);
+  position: relative;
 }
 
 .section--locations {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 40px 0;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 20px 0;
   color: black;
 }
 
 .section--locations ul {
-  margin: 0 20px;
+  padding: 0;
+  margin: 5px 10px;
 }
 
 .section--locations ul li {
@@ -465,7 +491,7 @@ footer p {
 }
 
 .section--winners p {
-  width: 50%;
+  width: 80%;
   text-align: center;
   margin: 0 auto;
 }
@@ -525,15 +551,146 @@ footer p {
   color: goldenrod;
 }
 
+@media (max-width: 1042px) {
+  .section--winners {
+    margin: 45px 0;
+    padding: 0 0;
+  }
+  .section--winners .title {
+    font-size: 3.5rem;
+  }
+  .section--winners .title img {
+    height: 5rem;
+  }
+}
+
+@media (max-width: 933px) {
+  .section--winners {
+    padding: 0;
+  }
+  .section--winners .title {
+    font-size: 3rem;
+  }
+  .section--winners .title img {
+    height: 5rem;
+  }
+  .section--winners p {
+    width: 80%;
+  }
+  .section--winners .container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .section--winners .player--card {
+    width: 300px;
+    height: 400px;
+    margin: 10px 15px;
+  }
+  .section--winners .card--body {
+    padding: 10px 20px;
+    color: #89807a;
+    font-weight: 550;
+  }
+}
+
+@media (max-width: 733px) {
+  .section--winners .title {
+    font-size: 3rem;
+    color: #5a666a;
+  }
+  .section--winners .title img {
+    display: none;
+  }
+  .section--winners .player--card {
+    width: 380px;
+    height: 420px;
+    margin: 10px 0;
+  }
+  .section--winners .card--header {
+    height: 250px;
+    width: 100%;
+  }
+  .section--winners .card--header img {
+    height: 100%;
+    width: 100%;
+  }
+  .section--winners .card--body {
+    padding: 10px 20px;
+    color: #89807a;
+    font-weight: 550;
+  }
+  .section--winners .card--body h2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .section--winners .card--body h6 {
+    margin: 0;
+    color: #89807a;
+  }
+  .section--winners .card--body h5 {
+    margin: 0;
+    color: #5a666a;
+  }
+  .section--winners .card--body .gold {
+    color: goldenrod;
+  }
+}
+
+@media (max-width: 433px) {
+  .section--winners {
+    padding: 0 20px;
+  }
+  .section--winners .player--card {
+    max-width: 300px;
+    min-width: 260px;
+    height: 430px;
+    margin: 10px 10px;
+  }
+  .section--winners .card--header {
+    height: 200px;
+    width: 100%;
+  }
+  .section--winners .card--header img {
+    height: 100%;
+    width: 100%;
+  }
+  .section--winners .card--body {
+    padding: 10px 20px;
+    color: #89807a;
+    font-weight: 550;
+  }
+  .section--winners .card--body h2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .section--winners .card--body h6 {
+    margin: 0;
+    color: #89807a;
+  }
+  .section--winners .card--body h5 {
+    margin: 0;
+    color: #5a666a;
+  }
+  .section--winners .card--body .gold {
+    color: goldenrod;
+  }
+}
+
 .card {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 3;
-  grid-row: 1 / 4;
   padding: 2em;
   outline: 2px solid  currentColor;
   outline-offset: -1em;
   -webkit-box-shadow: 0 0 0.5em 0.5em rgba(0, 0, 0, 0.3);
           box-shadow: 0 0 0.5em 0.5em rgba(0, 0, 0, 0.3);
+  z-index: 2;
 }
 
 .card--dark {
@@ -550,36 +707,81 @@ footer p {
 }
 
 .card--start {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 4;
-  grid-column: 2 / span 4;
-  z-index: 2;
+  width: 580px;
+  position: absolute;
+  left: 200px;
+  top: 10%;
 }
 
 .card--end {
-  -ms-grid-column: 4;
-  -ms-grid-column-span: 4;
-  grid-column: 4 / span 4;
-  z-index: 2;
+  width: 580px;
+  position: absolute;
+  right: 10%;
 }
 
 .card__image {
   z-index: 1;
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 3;
-  grid-row: 2 / 5;
 }
 
 .card__image--start {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 3;
-  grid-column: 2 / span 3;
+  position: absolute;
+  width: 600px;
+  top: 20%;
+  right: 40%;
 }
 
 .card__image--end {
-  -ms-grid-column: 5;
-  -ms-grid-column-span: 3;
-  grid-column: 5 / span 3;
+  position: absolute;
+  width: 550px;
+  top: 20%;
+  left: 650px;
+}
+
+@media (max-width: 1250) {
+  .card {
+    padding: 2em;
+    outline: 2px solid  currentColor;
+    outline-offset: -1em;
+    -webkit-box-shadow: 0 0 0.5em 0.5em rgba(0, 0, 0, 0.3);
+            box-shadow: 0 0 0.5em 0.5em rgba(0, 0, 0, 0.3);
+    z-index: 2;
+  }
+  .card--dark {
+    background: #414a4d;
+    color: #a3b9bf;
+  }
+  .card--dark .section__title {
+    color: white;
+  }
+  .card--light {
+    background: white;
+  }
+  .card--start {
+    width: 580px;
+    position: absolute;
+    left: 200px;
+    top: 10%;
+  }
+  .card--end {
+    width: 580px;
+    position: absolute;
+    right: 10%;
+  }
+  .card__image {
+    z-index: 1;
+  }
+  .card__image--start {
+    position: absolute;
+    width: 600px;
+    top: 20%;
+    right: 40%;
+  }
+  .card__image--end {
+    position: absolute;
+    width: 50%;
+    top: 20%;
+    left: 600px;
+  }
 }
 
 .btn {

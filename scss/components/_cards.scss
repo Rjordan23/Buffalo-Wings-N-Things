@@ -1,9 +1,10 @@
 .card {
-  grid-row: 1 / 4;
+  // grid-row: 1 / 4;
   padding: 2em;
   outline: 2px solid  currentColor;
   outline-offset:  -1em;
   box-shadow: 0 0 .5em .5em rgba(black, .3);
+  z-index: 2;
 
   &--dark {
     background: $clr-blue-dark;
@@ -17,27 +18,87 @@
   &--light {
     background: white;
   }
-
+  // Top Card
   &--start {
-    grid-column: 2 / span 4;
-    z-index: 2;
+    width: 580px;
+    position: absolute;
+    left: 200px;
+    top: 10%;
   }
-
+  // Bottom Card
   &--end {
-    grid-column: 4 / span 4;
-    z-index: 2;
+    width: 580px;
+    position: absolute;
+    right: 10%;
   }
-
   &__image {
     z-index: 1;
-    grid-row: 2 / 5;
+    // Bottom Image
     &--start {
-      grid-column: 2 / span 3;
+      position: absolute;
+      width: 600px;
+      top: 20%;
+      right: 40%;
     }
+    // Top Imaage
     &--end {
-      grid-column: 5 / span 3;
+      position: absolute;
+      width: 550px;
+      top: 20%;
+      left: 650px;
     }
   }
 }
 
-
+@media (max-width: 1250) {
+  .card {
+    padding: 2em;
+    outline: 2px solid  currentColor;
+    outline-offset:  -1em;
+    box-shadow: 0 0 .5em .5em rgba(black, .3);
+    z-index: 2;
+  
+    &--dark {
+      background: $clr-blue-dark;
+      color: $clr-blue-light;
+  
+      .section__title {
+        color: white;
+      }
+    }
+  
+    &--light {
+      background: white;
+    }
+    // Top Card
+    &--start {
+      width: 580px;
+      position: absolute;
+      left: 200px;
+      top: 10%;
+    }
+    // Bottom Card
+    &--end {
+      width: 580px;
+      position: absolute;
+      right: 10%;
+    }
+    &__image {
+      z-index: 1;
+      // Bottom Image
+      &--start {
+        position: absolute;
+        width: 600px;
+        top: 20%;
+        right: 40%;
+      }
+      // Top Imaage
+      &--end {
+        position: absolute;
+        width: 50%;
+        top: 20%;
+        left: 600px;
+      }
+    }
+  }
+}
