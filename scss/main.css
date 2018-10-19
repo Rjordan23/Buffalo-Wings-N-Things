@@ -402,8 +402,8 @@ footer p {
       -ms-flex-align: center;
           align-items: center;
   padding: 80px 0;
-  background: -webkit-gradient(linear, right top, left bottom, from(rgba(27, 40, 69, 0.2)), to(rgba(0, 0, 0, 0.3))), url("../../images/field-2.jpg");
-  background: linear-gradient(to bottom left, rgba(27, 40, 69, 0.2), rgba(0, 0, 0, 0.3)), url("../../images/field-2.jpg");
+  background: -webkit-gradient(linear, right top, left bottom, from(rgba(27, 40, 69, 0.2)), to(rgba(0, 0, 0, 0.3))), url("../images/field-2.jpg");
+  background: linear-gradient(to bottom left, rgba(27, 40, 69, 0.2), rgba(0, 0, 0, 0.3)), url("../images/field-2.jpg");
   background-position-y: 55%;
   background-position-x: left;
   -webkit-box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.5);
