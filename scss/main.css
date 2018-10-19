@@ -110,8 +110,8 @@ nav a:hover {
 }
 
 .section--intro {
-  background-image: -webkit-gradient(linear, right top, left bottom, from(rgba(27, 40, 69, 0.75)), to(rgba(27, 40, 69, 0.8))), url("../../images/jr-2.jpg");
-  background-image: linear-gradient(to bottom left, rgba(27, 40, 69, 0.75), rgba(27, 40, 69, 0.8)), url("../../images/jr-2.jpg");
+  background-image: -webkit-gradient(linear, right top, left bottom, from(rgba(27, 40, 69, 0.75)), to(rgba(27, 40, 69, 0.8))), url("../images/jr-2.jpg");
+  background-image: linear-gradient(to bottom left, rgba(27, 40, 69, 0.75), rgba(27, 40, 69, 0.8)), url("../images/jr-2.jpg");
   background-position-y: center;
   background-size: cover;
   background-repeat: no-repeat;
