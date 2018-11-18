@@ -177,7 +177,8 @@ nav a:hover {
 @media (max-width: 933px) {
   .section--wide {
     margin: 0 auto;
-        grid-template-areas: 'about-us about-us' 'beef beef';
+        grid-template-areas: 'about-us about-us'
+ 'beef beef';
   }
   .section--wide h1 {
     text-align: center;
