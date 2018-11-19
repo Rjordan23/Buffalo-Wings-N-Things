@@ -159,8 +159,9 @@ nav a:hover {
   margin: 5.5em auto;
 }
 
-.section--wide h1 {
-  color: #5a666a;
+.section--wide h2 {
+  font-size: 1.8em;
+  margin-bottom: .5em;
 }
 
 .section--wide .section--left {
@@ -174,11 +175,30 @@ nav a:hover {
   z-index: -1;
 }
 
+.section--wide .section--right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section--wide .section--right p {
+  width: 85%;
+}
+
 @media (max-width: 933px) {
   .section--wide {
     margin: 0 auto;
-        grid-template-areas: 'about-us about-us'
- 'beef beef';
+        grid-template-areas: 'about-us about-us' 'beef beef';
   }
   .section--wide h1 {
     text-align: center;

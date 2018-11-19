@@ -5,8 +5,9 @@
   grid-template-columns: repeat(2, 1fr);
   margin: 5.5em auto;
 
-  h1 {
-    color: $clr-blue-base;
+  h2 {
+    font-size: 1.8em;
+    margin-bottom: .5em;
   }
   
   .section--left {
@@ -19,6 +20,19 @@
       z-index: -1;
     }
   }
+
+  .section--right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      width: 85%;
+    }
+  }
+
+  
 }
 
 @media (max-width: 933px) {
